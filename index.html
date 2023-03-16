@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<style>
+tr, td{
+    border: 1px solid;
+}
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+#com{
+    color: brown;
+}
+
+#got{
+    color: aqua;
+}
+
+details{
+    background: grey;
+    width: 50%;
+    margin: auto;
+}
+#blez{
+    font: 600;
+    color: black;
+}
+
+summary{
+    font: 600;
+    color: white;
+}
+
+
+tr:nth-child(2){
+    color: blue;
+}
+td:nth-child(3){
+    color: rgb(255, 0, 0);
+}
+
+label{
+    padding: .3rem;
+    color: blue;
+    font-size: 20px;
+    font-weight: 400;
+}
+progress{
+    /* background-color: rgb(0, 140, 255); */
+    background: blue;
+    margin-top: 30px;
+}
+
+fieldset{
+    width: 300px;
+    background:rgb(44, 208, 26);
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+table{
+    caption-side: bottom;
+    border: 1px solid;
+}
+
+tr:nth-last-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+@media screen {
+    
+}
+
+
+@media screen and (max-width: 576px) {
+        input{
+            width: auto;
+
+            
+        }
+    }
+
+ input{
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 105px;
+    background: black;
+    color: white;
+    position: static;
+ }
+
+
+
+h1{
+    text-align: center;
+    border: none;
+    background: gray;
+    width: 300px;
+    padding: 30px 0px;
+    margin-left: 40%;
+    box-shadow: gold;
+}
+
+    @media screen and (max-width: 576px) {
+        h1{
+            width: auto;
+            margin: auto;
+            
+        }
+    }
+
+
+@media screen and (max-width: 576px){
+    body{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px){
+    fieldset{
+        width: auto;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 576px){
+    h2{
+        width: auto;
+        margin: auto;
+        font-size: large;
+        
+    }
+}
+h2{
+    text-align: center;
+    width: auto;
+    margin: auto;
+    font-size: large;
+    font-weight: 700;
+}
+.got{
+    background-color: aqua;
+    font-size: 25px;
+    animation: name 3s ease-in-out infinite;
+    opacity: 0;
+    scroll-behavior: auto;
+}
+@keyframes name {
+    to{
+        opacity: 1;
+        scroll-behavior: auto;
+    }
+}
+
+h3{
+    text-align: center;
+    width: 70%;
+    margin-left: 60px;
+}
+
+</style>
+<body>
+    
+
+    <h1 style="color: white">Never use MARQUEE elements for movement as 
+        a kind of provoked-animation because it is counter-productive and many browsers dont align with it.</h1>
+
+
+
+    <input type="text" id="name" value="OGARAGA RAYMOND">
+
+    <!-- <h6>
+            The element was used to identify text that should move
+             across a defined section of a webpage in a horizontal or 
+             vertical direction. The element has been deprecated and 
+             should no longer be used. CSS or JavaScript can be
+             used to create similar effects.    
+    </h6>     -->
+    <fieldset>
+        <legend>Table one</legend>
+    <table>
+        <caption>commodity</caption>
+        <tr>
+            <th>Name</th>
+            <th>Qnty</th>
+            <th>Cost</th>
+        </tr>
+
+        <tr>
+            <td>mango</td>
+            <td>10</td>
+            <td>#300</td>
+        </tr>
+
+        <tr>
+            <td>orage</td>
+            <td>5</td>
+            <td>#100</td>
+        </tr>
+
+        <tr>
+            <td>pear</td>
+            <td>30</td>
+            <td>#500</td>
+        </tr>
+
+        <tr>
+            <td colspan="2">total</td>
+            <td>#1000</td>
+        </tr>
+    </table>
+    <label for="name">progress</label>
+    <progress min="10" max="100" value="80">80%</progress>
+</fieldset>
+ 
+
+<fieldset>
+    <legend>Table Two</legend>
+
+    <table>
+        <caption>commodity</caption>
+        <tr>
+            <th>Name</th>
+            <th>Qnty</th>
+            <th>Cost</th>
+        </tr>
+
+        <tr>
+            <td>mango</td>
+            <td>10</td>
+            <td>#300</td>
+        </tr>
+
+        <tr>
+            <td>orage</td>
+            <td>5</td>
+            <td>#100</td>
+        </tr>
+
+        <tr>
+            <td>pear</td>
+            <td>30</td>
+            <td>#500</td>
+        </tr>
+
+        <tr>
+            <td>Total</td>
+            <td>45</td>
+            <td>#1000</td>
+        </tr>
+    </table>
+            
+    <label for="name">progress</label>
+    <progress min="10" max="100" value="80">80%</progress>
+</fieldset>
+<br>
+<h2>There are two kinds of people in this world</h2>
+<details>
+    <summary id="blez">Evil</summary>
+    <p id="com">Arogation, envious, gossips, ungrateful, greedy, unrepentant, selfish, sad always, sensually sexually disjointed etc.</p>
+</details>
+
+<details>
+    <summary>Godly</summary>
+    <p id="got">Humble, loving, kind, conserved and reserved, truthful, faithful, repentant, forgiving, think about others, sensually sexually coordinated, happy always, dont-show-off, dicerners etc</p>
+</details> <br><br>
+<h3>HIDDEN TREASURES</h3>
+<details>
+    <br><br>
+    <summary>Click Here!</summary>
+<p class="got">With all your learning, without Christ you are 
+    eternally doomed. Think About it and be ye saved!</p>
+</details>
+   <br><br>           
+</body>
+</html>
